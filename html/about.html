@@ -1,22 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Portfolio | Modern Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</div>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">Modern Site</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<div class="container">
-    <h1>About Us</h1>
-    <p>This website was created using HTML, CSS and JavaScript.</p>
-</div>
+<section class="portfolio-section">
+    <div class="container portfolio-container">
 
-<script src="script.js"></script>
+        <div class="profile-card">
+            <img src="your-photo.jpg" alt="Your Photo">
+            <h2>Your Name</h2>
+            <p>Aspiring Web Developer</p>
+        </div>
+
+        <div class="portfolio-content">
+
+            <div class="portfolio-block">
+                <h3>About Me</h3>
+                <p>
+                    I am passionate about building modern and responsive websites.
+                    I enjoy designing clean interfaces and developing functional
+                    web applications using HTML, CSS, and JavaScript.
+                </p>
+            </div>
+
+            <div class="portfolio-block">
+                <h3>Skills</h3>
+                <ul class="skill-list">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+
+            <div class="portfolio-block">
+                <h3>Interests</h3>
+                <ul class="interest-list">
+                    <li>Web Development</li>
+                    <li>Technology Trends</li>
+                    <li>Creative Design</li>
+                    <li>Learning New Frameworks</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Modern Site. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

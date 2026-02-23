@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact | Modern Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</div>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">Modern Site</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<div class="container">
-    <h1>Contact Us</h1>
+<section class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+</section>
 
-    <form onsubmit="return validateForm()">
-        <label>Name:</label><br>
-        <input type="text" id="name"><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" id="email"><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <p id="error"></p>
-</div>
+<footer>
+    <p>© 2026 Modern Site. All rights reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

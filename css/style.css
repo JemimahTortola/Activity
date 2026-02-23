@@ -1,55 +1,245 @@
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('https://db.onlinewebfonts.com/t/8c3c07f5fda2b5bdb9d9e29056dd97ab.woff2') format('woff2');
+}
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HarmonyOS Sans', sans-serif;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+body {
+    background-color: #A0AAA9;
+    color: #313739;
+    line-height: 1.6;
 }
 
 .container {
-    padding: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    background-color: #313739;
+    padding: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F8F546;
+    font-weight: 600;
+}
+
+nav a {
+    color: #F8F546;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #657136;
+}
+
+nav a.active {
+    border-bottom: 2px solid #F8F546;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #7E807C;
+    padding: 120px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #F8F546;
+    color: #313739;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #657136;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #313739;
+    color: #F8F546;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #657136;
+    color: #fff;
+}
+
+/* Features Section */
+
+.features {
+    background-color: #A0AAA9;
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2rem;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: #657136;
+}
+
+/* Portfolio Page */
+
+.portfolio-section {
+    background-color: #7E807C;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.profile-card {
+    background-color: #313739;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.profile-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #F8F546;
+}
+
+.skill-list li,
+.interest-list li {
+    background-color: #657136;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* Contact Page */
+
+.contact-section {
+    background-color: #7E807C;
+    padding: 100px 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A0AAA9;
+    color: #313739;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: blue;
-    color: white;
+    background-color: #F8F546;
+    color: #313739;
+    padding: 12px;
     border: none;
+    font-weight: 600;
+    border-radius: 4px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: darkblue;
+    background-color: #657136;
+    color: #fff;
 }
 
-input[type="text"], input[type="email"] {
-    padding: 8px;
-    width: 250px;
+footer {
+    background-color: #313739;
+    color: #F8F546;
+    text-align: center;
+    padding: 20px 0;
 }
 
-input[type="submit"] {
-    padding: 10px 15px;
-    background-color: green;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+/* Responsive */
 
-input[type="submit"]:hover {
-    background-color: darkgreen;
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
 }

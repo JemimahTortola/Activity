@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Home | Modern Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</div>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">Jemimah Portfolio</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<div class="container">
-    <h1>Welcome to My Website</h1>
-    <p>This is the home page.</p>
-    <button onclick="showMessage()">Click Me</button>
-</div>
+<section class="hero">
+    <div class="container hero-content">
+        <h2>Hi, I'm Jemimah Tortola</h2>
+        <p>
+            I design and build responsive websites with clean structure,
+            modern styling, and functional user experience.
+        </p>
+        <div class="hero-buttons">
+            <a href="about.html" class="btn-primary">View Portfolio</a>
+            <a href="contact.html" class="btn-secondary">Contact Me</a>
+        </div>
+    </div>
+</section>
 
-<script src="script.js"></script>
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">What I Do</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Web Development</h3>
+                <p>
+                    test
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>UI Design</h3>
+                <p>
+                    test
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Frontend Projects</h3>
+                <p>
+                    test
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© All rights reserved.</p>
+</footer>
+
 </body>
 </html>
